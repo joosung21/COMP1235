@@ -1,0 +1,15 @@
+div {
+  background-color: silver;
+}
+
+main {
+  display: grid;
+  /* grid-template: 100px 100px / 150px 150px 150px; */
+  /* Grid Track Sizing */
+  /* grid-template: repeat(2, 50px) / repeat(3, 1fr); */
+  /* minmax() */
+  /* grid-template: repeat(2, 50px) / repeat(auto-fit, minmax(100px, 200px)); */
+  /* repeats tow colummns */
+  /* grid-template: repeat(2, 50px) / repeat(2, 50px 1fr); */
+  /* grid-gap: 20px; */
+}

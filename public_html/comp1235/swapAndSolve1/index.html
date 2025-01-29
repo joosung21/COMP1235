@@ -1,0 +1,98 @@
+<!-- ## **Korean Food Recipe Hub - CEO: Joosung Ahn, CTO: Jooyong Choi**
+
+I want to create a website to share Korean recipes.
+
+- The **site name "Korean Food Recipe Hub"** should be displayed in the top navigation menu.
+- Navigation menu: Home, Foods, Gallery, History
+- There should be **contact information for my food blog on the bottom side of the page**.
+- The **footer should include my name as a copyright notice**.
+
+The website should be **responsive and work well on mobile devices**.
+
+- The **navigation menu should not break when switching between different screen sizes**.
+
+I want a section that displays **my 8 favorite Korean dishes**.
+
+- The dishes should be arranged in **4 columns and 2 rows**, with images and short descriptions.
+
+The website should include **a feature that asks users to enter their email**.
+
+- **Use a loop to keep asking for the email until a valid one is provided**.
+- **Validate the email input before accepting it**. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Korean Food Recipe Hub</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/script/script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <h1>Korean Food Recipe Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Foods</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">History</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Korean Food Grid Section -->
+    <section class="food-grid">
+      <h2>My Favorite Korean Dishes</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="assets/img/img2.jpg" alt="Bibimbap" />
+          <p>Bibimbap - Mixed Rice</p>
+        </div>
+        <div class="grid-item">
+          <img src="assets/img/img1.jpg" alt="Kimchi" />
+          <p>Kimchi - Fermented Vegetables</p>
+        </div>
+        <div class="grid-item">
+          <img src="assets/img/img3.jpg" alt="Tteokbokki" />
+          <p>Tteokbokki - Spicy Rice Cakes</p>
+        </div>
+        <div class="grid-item">
+          <img src="assets/img/img4.jpg" alt="Bulgogi" />
+          <p>Bulgogi - Grilled Beef</p>
+        </div>
+        <div class="grid-item">
+          <img src="assets/img/img5.jpg" alt="Jajangmyeon" />
+          <p>Jajangmyeon - Black Bean Noodles</p>
+        </div>
+        <div class="grid-item">
+          <img src="assets/img/img6.webp" alt="Samgyeopsal" />
+          <p>Samgyeopsal - Grilled Pork Belly</p>
+        </div>
+        <div class="grid-item">
+          <img src="assets/img/img7.jpg" alt="Sundubu" />
+          <p>Sundubu Jjigae - Spicy Tofu Stew</p>
+        </div>
+        <div class="grid-item">
+          <img src="assets/img/img8.jpg" alt="Mandu" />
+          <p>Mandu - Dumplings</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Subscription -->
+    <section class="email-section">
+      <h2>Subscribe for More Recipes</h2>
+      <p>Enter your email to receive weekly Korean food recipes.</p>
+      <button onclick="getEmail()">Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Contact: joosung.ahn@koreanfoodhub.com</p>
+      <p>&copy; 2025 Joosung Ahn</p>
+    </footer>
+  </body>
+</html>
