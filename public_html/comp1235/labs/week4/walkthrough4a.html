@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joosung Ahn - Task 1</title>
+  </head>
+  <script>
+    // Write a JavaScript script that
+    // accepts a numerical(parseInt)
+    // input for(prompt)
+    let stop_num = parseInt(prompt("Enter number: "));
+    // the number(0-9) of iterations (repeating)
+    // and utilizes a while loop. (repeating that no. in any sequence)
+    let i = 0;
+    while (i < stop_num) {
+      console.log("number of iterations: ", i);
+      document.write("number of iterations: ", i, "<br>");
+      if (i === 3) {
+        break;
+      }
+      i++;
+    }
+    // Ensure that the loop stops when the iteration count reaches 3.
+  </script>
+
+  <body></body>
+</html>

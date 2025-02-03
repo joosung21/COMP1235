@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joosung Ahn - Task 4</title>
+  </head>
+  <script>
+    // Write a java script which can test expression patterns:
+    // test expression patterns: pattern.text(var)
+    // 1=> Pattern_literal: (‘/pop/’),
+    let pattern = new RegExp(/pop/);
+    let var1 = "lollipop";
+    let res1 = pattern.test(var1);
+    document.write(res1); // true/false
+    // 2=> Pattern_phone: (‘/\(\d{3}\)\d{3}-\d{4}/’)
+    let pattern2 = new RegExp(/\(\d{3}\)\d{3}-\d{4}/);
+    let var2 = "(123)456-7890";
+    let res2 = pattern2.test(var2);
+    document.write(res2);
+    // 3=> Pattern_email: (‘/^[a-zA-Z\.]*@[a-zA-Z]+\.com$/’))
+    let pattern3 = new RegExp(/^[d\.]*@[a-zA-Z]+\.com$/);
+    let var3 = "abc@gmail.com";
+    let res3 = pattern3.test(var3);
+    document.write(res3);
+    // Upload the work under public_html/comp1235/labs/week4/
+  </script>
+
+  <body></body>
+</html>

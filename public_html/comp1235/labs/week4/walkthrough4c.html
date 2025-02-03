@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joosung Ahn - Task 3</title>
+  </head>
+  <script>
+    // Write a JavaScript script
+    // to create an Animal object,
+    const Animal = new Object();
+    // declare constant variable for tail_length.
+    Animal.tail_length = 20;
+    // Declare the properties for one of the animals
+    const Dino = {
+      name: "T-Rex",
+      cousins: ["abc", "def"], // 0=> abc, 1=> def
+      food: [
+        { breakfast_m: "grass", dinner_m: "cake" }, // 0th element
+        { breakfast_t: "milk", dinner_t: "meat" }, // 1st element
+      ],
+    };
+    document.write("Name of the animal: ", Dino.name, "<br>");
+    document.write("Name of 2nd cousin: ", Dino.cousins[1], "<br>");
+    document.write(
+      "What meal Dino is eating ",
+      "on Tuesday as dinner; ",
+      Dino.food[1].breakfast_t
+    );
+    // and display the few properties.
+  </script>
+
+  <body></body>
+</html>
