@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Joosung Ahn - Task 1</title>
+    <script>
+      //1. function expression
+      // remove a name and assigning a var to a given function
+      let print = function (start, stop) {
+        // for loop
+        let str = "";
+        for (; start <= stop; start++) {
+          str += start + ",";
+        }
+        return str;
+      };
+      console.log(print(1, 10));
+      //2. arow funcitons
+      let foo = () => "Hello";
+      let foo1 = () => {
+        return "Hello";
+      };
+      let foo2 = (name) => {
+        return "Hello" + "---" + name;
+      };
+      console.log(foo()); //Hello
+      console.log(foo1()); //Hello
+      console.log(foo2("Joosung")); //Hello---Joosung
+      //3. callback functions
+      //a. fetch the name of user
+      let printName = (name) => {
+        return name;
+      };
+      let printAge = (age) => {
+        return age;
+      };
+      //b. greet the user by taking help of callback
+      function greet(name, callback) {
+        return "Hello " + callback(name);
+      }
+      console.log(greet("Joosung", printName)); // Hello Joosung
+      console.log(greet(19, printAge)); // Hello Joosung
+      document.write(greet("Joosung", printName));
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Joosung Ahn - Task 1</title>
+  </head>
+  <script>
+    // 1. Array => []
+    arr1 = ["apple", "banana", "cherry"];
+    arr2 = ["milk"];
+    arr3 = [["milk"], "orange"];
+    console.log("Array: ", arr1);
+    console.log("Merge Array; ", [arr1, arr2, arr3]);
+
+    // 2. Object => {} => varName.propertyName
+    const student = {
+      name: "Joosung Ahn",
+      email: "joosung@gmail.com",
+      address: "123 Main St",
+    };
+    let st1 = new Object();
+    st1.name = "Goerge";
+    st1.email = "george@gmail.com";
+    console.log(student);
+    console.log(st1);
+
+    // 3. Spread operator => ...nameOFvar
+    console.log("Join arrays: ", [...arr1, ...arr2]);
+    let str = ["Hi", "Today", "is", "wonderful", "day"];
+    console.log(...str);
+  </script>
+
+  <body></body>
+</html>

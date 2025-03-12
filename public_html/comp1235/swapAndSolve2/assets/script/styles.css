@@ -1,0 +1,7 @@
+.grid-item {
+  position: relative;
+}
+
+.grid-item .recipe {
+  display: none;
+}

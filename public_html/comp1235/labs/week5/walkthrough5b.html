@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Joosung Ahn - Task 2</title>
+  </head>
+  <script>
+    // 1. SUBSTRING => .substring(start, end)
+    let username = "George Brown";
+    let username1 = "George**Brown";
+    console.log("First Name: ", username.substring(0, 6));
+    console.log("Last Name: ", username.substring(7, 12));
+    // indexOf => Position of the char where it starts
+    // SYNTAX => varName.indexOf("symbol"+no. of times a symbol is repeated)
+    console.log("Position: ", username.indexOf(" ") + 1);
+    console.log("Position: ", username1.indexOf("**") + 2);
+    // 1) .toUpperCase(), 2) .toLowerCase()
+    console.log(username.toUpperCase());
+    console.log(username.toLowerCase());
+    // FUNCTION => common var to generate result
+    // syntax => function nameFunction(args/input) {
+    // return res/outputresult
+    // }
+    function getFirstName(username) {
+      let firstName = username.substring(0, 6);
+      console.log("First Name: ", firstName);
+      return firstName;
+    }
+
+    // call the function
+    getFirstName("George Brown");
+    getFirstName("Simran Smith");
+  </script>
+
+  <body></body>
+</html>
