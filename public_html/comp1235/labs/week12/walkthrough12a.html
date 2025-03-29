@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Joosung Ahn - Task 1</title>
+    <script src="walkthrough12a.js"></script>
+    <script>
+      console.log("GBC");
+    </script>
+    <!-----------TYPESCRIPT(.ts)----------------------->
+    <script src="https://cdn.jsdelivr.net/npm/typescript@5.3.3"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/text-typescript@1.3.0"
+    ></script>
+    <script type="text/typescript">
+      console.log("GBC")
+      // creat a function => add
+      function add(a: number, b: numbmner): number {
+        return a + b;
+      }
+      console.log("Add: ", add(2, 5))//7
+      console.log("Add: ", add(2, "5"))//25
+      //2. Create interface Walker
+      interface Walker {
+        readonly age: number;
+        do_walk(age: number);
+      }
+      //3. Create class "Mammal"
+      //display the type of access modifier
+      //3 p's=>1, Public, 2. Private, 3. Protected
+      class Mammal implements Walker {
+        public height: number;
+        private dinner: string;
+        protected money: number;
+        //create the method
+        constructor(p_height: number, p_dinner: string, p_money: number) {
+          this.height = p_height;
+          this.dinner = p_dinner;
+          this.money = p_money;
+        }
+      }
+      const m1 = new Mammal(7.7, "Meat", 1000);
+      console.log(m1);//RUNTIME
+      console.log(m1.dinner);//because it is private
+      console.log(m1.money);//because it is protected
+      console.log(m1.height);//because it is public
+    </script>
+  </head>
+  <body></body>
+</html>

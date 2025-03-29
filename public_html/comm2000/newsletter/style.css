@@ -103,6 +103,13 @@ section {
 .featured-image {
   width: 100%;
 }
+.caption {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
 section h2 {
   z-index: 10;
   font-size: 1.8rem;
